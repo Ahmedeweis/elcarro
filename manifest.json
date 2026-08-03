@@ -1,0 +1,17 @@
+{
+    "name": "ASTAR - Future of Fashion",
+    "short_name": "ASTAR",
+    "description": "Discover the latest trends in the world of fashion with our unique collection. Experience the future of style today with ASTAR.",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#2a2a30",
+    "theme_color": "#2a2a30",
+    "orientation": "portrait",
+    "icons": [
+        {
+            "src": "/logo.png",
+            "sizes": "192x192 512x512",
+            "type": "image/png"
+        }
+    ]
+}

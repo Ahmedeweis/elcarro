@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Basic browser settings for charset and modern screen support -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta http-equiv="x-ua-compatible" content="IE=edge" />
+  <!-- Browser and mobile title bar color -->
+  <meta name="theme-color" content="#2a2a30" />
+  <!-- Enable app mode on Android (remove title bar when installed) -->
+  <meta name="mobile-web-app-capable" content="yes" />
+  <!-- Enable app mode on iOS (Standalone) -->
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <!-- Set status bar style on iOS when launched from home screen -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <!-- Prevent iOS from treating numbers as phone/email/address -->
+  <meta name="format-detection" content="telephone=no,email=no,address=no" />
+  <!-- Page title and SEO description for Google -->
+  <title>ASTAR - Future of Fashion</title>
+  <!-- SEO description for Google -->
+  <meta name="description"
+    content="Discover the latest trends in the world of fashion with our unique collection. Experience the future of style today with ASTAR." />
+  <!-- Open Graph settings for better sharing on Facebook and WhatsApp -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="ASTAR - Future of Fashion" />
+  <meta property="og:title" content="ASTAR - Future of Fashion" />
+  <meta property="og:description"
+    content="Discover the latest trends in the world of fashion with our unique collection. Experience the future of style today with ASTAR." />
+  <meta property="og:image" content="/logo.png" />
+  <meta property="og:url" content="/" />
+  <!-- Twitter Card settings for better link sharing appearance -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="ASTAR - Future of Fashion" />
+  <meta name="twitter:description"
+    content="Discover the latest trends in the world of fashion with our unique collection. Experience the future of style today with ASTAR." />
+  <meta name="twitter:image" content="/logo.png" />
+  <!-- Browser favicons and iOS icon -->
+  <link rel="icon" href="/logo.png" sizes="32x32" />
+  <link rel="icon" href="/logo.png" sizes="16x16" />
+  <link rel="apple-touch-icon" href="/logo.png" />
+  <!-- PWA manifest file (name - icons - app colors) -->
+  <link rel="manifest" href="/manifest.json" />
+  <!-- Preconnect to font servers for faster loading -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <!-- Import serif font for ASTAR logo -->
+  <!-- Preload main JavaScript file to speed up app start -->
+  <link rel="preload" href="/src/main.js" as="script">
+  <!-- Special color for Windows Tiles when installed -->
+  <meta name="msapplication-TileColor" content="#2a2a30" />
+  <!-- App title when added as shortcut on iPhone -->
+  <meta name="apple-mobile-web-app-title" content="ASTAR" />
+</head>
+
+<body>
+  <div id="app"></div>
+  <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>
