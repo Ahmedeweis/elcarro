@@ -1,24 +1,24 @@
 <template>
-  <div class="w-full overflow-x-hidden pt-0 md:pt-24">
+  <div class="w-full overflow-x-hidden pt-0 md:pt-6">
     <HeroSection />
-    <ExploreSection />
-    <PromoSection />
-    <!-- <AboutSection /> -->
-    <EventsSection />
-    <RecommendedSection />
-    <SubscribeSection />
-    <Footer />
-    <ScrollToTop />
+    <AboutSection />
+    <BrandsSection />
+    <InventorySection />
+    <WhatWeOfferSection />
+    <TestimonialsSection />
+    <FaqSection />
+    <CtaSection />
+    <FooterSection />
   </div>
 </template>
 <script setup>
 import HeroSection from '../components/HeroSection.vue';
-import PromoSection from '../components/PromoSection.vue';
-import ExploreSection from '../components/ExploreSection.vue';
 import AboutSection from '../components/AboutSection.vue';
-import EventsSection from '../components/EventsSection.vue';
-import RecommendedSection from '../components/RecommendedSection.vue';
-import SubscribeSection from '../components/SubscribeSection.vue';
-import Footer from '../components/Footer.vue';
-import ScrollToTop from '../components/ScrollToTop.vue';
+import WhatWeOfferSection from '../components/WhatWeOfferSection.vue';
+import InventorySection from '../components/InventorySection.vue';
+import TestimonialsSection from '../components/TestimonialsSection.vue';
+import BrandsSection from '../components/BrandsSection.vue';
+import FaqSection from '../components/FaqSection.vue';
+import CtaSection from '../components/CtaSection.vue';
+import FooterSection from '../components/FooterSection.vue';
 </script>
