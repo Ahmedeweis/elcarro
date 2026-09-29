@@ -2,12 +2,14 @@
   <div class="w-full overflow-x-hidden pt-0 md:pt-6">
     <HeroSection />
     <AboutSection />
-    <BrandsSection />
+
     <InventorySection />
     <WhatWeOfferSection />
     <TestimonialsSection />
+    <BrandsSection />
     <FaqSection />
     <CtaSection />
+
     <FooterSection />
   </div>
 </template>

@@ -5,7 +5,7 @@
       <!--  HERO STAGE – combines NAV + DARK CARD + WHITE CURVED TOP  -->
       <!-- ========================================================== -->
       <div
-        class="relative w-full h-[640px] sm:h-[700px] md:h-[760px] lg:h-[820px] rounded-[28px] sm:rounded-[32px] md:rounded-[36px] lg:rounded-[40px] overflow-hidden shadow-[0_28px_80px_-28px_rgba(10,10,10,0.36)]">
+        class="relative w-full h-[640px] sm:h-[700px] md:h-[760px] lg:h-[820px] rounded-[28px] sm:rounded-[32px] md:rounded-[36px] lg:rounded-[40px] overflow-hidden">
         <!-- ---------- DARK BACKGROUND (vehicle + gradient) ---------- -->
         <div class="absolute inset-0 z-0">
           <img :src="heroImg" alt="Luxury concept sports car side profile"
@@ -27,12 +27,8 @@
           <!-- Curved white SVG shape: full top width, concave smooth notch on bottom-right -->
           <svg class="block w-full pointer-events-none" viewBox="0 0 1440 138" preserveAspectRatio="none"
             aria-hidden="true">
-            <defs>
-              <!-- subtle inner shadow along the curved edge for premium Awwwards feel -->
-              <filter id="notch-edge-shadow" x="-10%" y="-10%" width="120%" height="140%">
-                <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.14" />
-              </filter>
-            </defs>
+
+
             <!--
               SMOOTH CONCAVE CURVE path specs (coordinate box 1440 × 138):
               • Flat top (y=0): white area
@@ -41,7 +37,7 @@
                 lands horizontally at y=123, then resumes to the right edge.
               This produces the curved "فوق يسار أبيض منحني ع اليمين" visual.
             -->
-            <path fill="#FFFFFF" filter="url(#notch-edge-shadow)" d="
+            <path fill="#FFFFFF" d="
                 M 0,0
                 L 1440,0
                 L 1440,22
@@ -88,14 +84,15 @@
         relative inline-flex items-center justify-center
         px-6 lg:px-8 py-2.5 lg:py-3
         text-[11px] lg:text-[12.5px] font-bold tracking-[0.14em] uppercase
-        text-white
+        text-
+      
         bg-transparent
         transition-colors duration-200
         group
       ">
                   <!-- طبقة البوردر الأبيض ذات الزوايا الدائرية والميلان -->
-                  <span class="
-          absolute inset-0 border-2 border-white
+                  <span style="border: solid 2px white; " class="
+          absolute inset-0
           rounded-[8px]
           -skew-x-[15deg]
           group-hover:bg-white/10 active:bg-white/15
@@ -103,7 +100,7 @@
           pointer-events-none
         "></span>
                   <!-- النص -->
-                  <span class="relative z-10">
+                  <span class="relative z-10 text-white">
                     STAY WITH US
                   </span>
                 </button>
@@ -177,7 +174,7 @@
                     <!-- الخلفية البيضاء المائلة بزوايا دائرية -->
                     <span class="
         absolute inset-0 bg-white
-        border-2 border-white
+        
         rounded-[10px] sm:rounded-[12px]
         -skew-x-[15deg]
         group-hover:bg-gray-100 group-active:bg-gray-200
@@ -273,12 +270,12 @@
     /* تكبير وتعميق الانحناء العكسي فوق */
     before:content-[''] before:absolute before:-top-[30px] before:right-0
     before:w-[30px] before:h-[30px] before:bg-transparent
-    before:rounded-br-[28px] before:shadow-[10px_10px_0_10px_#ffffff]
+    before:rounded--[28px] 
     before:pointer-events-none
     /* تكبير وتعميق الانحناء العكسي تحت */
     after:content-[''] after:absolute after:-bottom-[30px] after:right-0
     after:w-[30px] after:h-[30px] after:bg-transparent
-    after:rounded-tr-[28px] after:shadow-[10px_-10px_0_10px_#ffffff]
+    after:rounded-tr-[28px] 
     after:pointer-events-none
   ">
             <!-- النص الرأسي -->
@@ -314,21 +311,19 @@
       /* الانحناء العكسي فوق على الشمال: تم تعديل left إلى (90px - 24px = 66px) */
       before:content-[''] before:absolute before:-top-[24px] before:left-[66px]
       before:w-[24px] before:h-[24px] before:bg-transparent
-      before:rounded-bl-[24px] before:shadow-[-8px_8px_0_8px_#ffffff]
+      before:rounded-bl-[24px]
       before:pointer-events-none
       /* الانحناء العكسي تحت على الشمال (يبقى ثابتاً عند 0) */
       after:content-[''] after:absolute after:-bottom-[24px] after:left-0
       after:w-[24px] after:h-[24px] after:bg-transparent
-      after:rounded-tl-[24px] after:shadow-[-8px_-8px_0_8px_#ffffff]
+      after:rounded-tl-[24px] 
       after:pointer-events-none
     ">
               <!-- صورة السيارة داخل كارت مائل زواياه دائرية عبر SVG clipPath -->
               <div class="relative flex-shrink-0 ml-4 sm:ml-6">
-                <svg
-                  viewBox="0 0 550 320"
-                  class="w-[145px] sm:w-[185px] md:w-[225px] lg:w-[255px] h-auto block select-none drop-shadow-sm"
-                  aria-label="Car showcase"
-                >
+                <svg viewBox="0 0 550 320"
+                  class="w-[145px] sm:w-[185px] md:w-[225px] lg:w-[255px] h-auto block select-none "
+                  aria-label="Car showcase">
                   <defs>
                     <!-- مسار يحدد الشكل المائل بزوايا دائرية فائقة النعومة والهندسة الدقيقة -->
                     <clipPath id="roundedSkewClip">
@@ -347,22 +342,11 @@
                   </defs>
 
                   <!-- خلفية رمادية هادئة للكارت -->
-                  <rect
-                    width="550"
-                    height="320"
-                    fill="#f3f4f6"
-                    clip-path="url(#roundedSkewClip)"
-                  />
+                  <rect width="550" height="320" fill="#f3f4f6" clip-path="url(#roundedSkewClip)" />
 
                   <!-- تطبيق الماسك على الصورة مباشرة -->
-                  <image 
-                    :href="smallCarImg" 
-                    :xlink:href="smallCarImg"
-                    width="550" 
-                    height="320" 
-                    preserveAspectRatio="xMidYMid slice" 
-                    clip-path="url(#roundedSkewClip)" 
-                  />
+                  <image :href="smallCarImg" :xlink:href="smallCarImg" width="550" height="320"
+                    preserveAspectRatio="xMidYMid slice" clip-path="url(#roundedSkewClip)" />
                 </svg>
               </div>
               <!-- 2. المحتوى الأيمن (الأيقونة + الإحصائيات + Avatars) -->
@@ -464,6 +448,4 @@ import pers3 from '../assets/imgs/pers3.webp'
   mask-composite: intersect;
   -webkit-mask-composite: destination-in;
 }
-
-
 </style>

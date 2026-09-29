@@ -1,5 +1,6 @@
 <template>
-  <section class="w-full bg-white py-12 sm:py-16 lg:py-24 px-4 sm:px-6 lg:px-12 xl:px-16 overflow-hidden">
+  <section style="padding-top: 0;"
+    class="w-full bg-white py-12 sm:py-16 lg:py-24 px-4 sm:px-6 lg:px-12 xl:px-16 overflow-hidden">
     <div class="max-w-[1400px] mx-auto">
       <!-- Grid Container: Left Column & Right Column -->
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-start">
@@ -189,7 +190,7 @@
               </div>
 
               <!-- CARD 3: SLEEK CAR ACTION CARD -->
-              <div
+              <div style="height: 200px; align-self: flex-end;"
                 class="relative rounded-[20px] overflow-hidden h-[280px] sm:h-[310px] lg:h-[330px] bg-slate-900 shadow-[0_4px_20px_rgba(0,0,0,0.08)] group">
                 <img :src="sleekCarImg" alt="Sleek Sports Car in Motion"
                   class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
