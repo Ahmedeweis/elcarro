@@ -61,8 +61,7 @@
         <div class="absolute inset-0 z-40 flex flex-col">
           <!-- ============ TOP NAVIGATION (inside the white curved zone) ============ -->
           <nav
-          class="relative flex items-center justify-between h-[92px] sm:h-[96px] md:h-[102px] lg:h-[108px] px-5 sm:px-8 md:px-10 lg:px-14"
-         >
+            class="relative flex items-center justify-between h-[92px] sm:h-[96px] md:h-[102px] lg:h-[108px] px-5 sm:px-8 md:px-10 lg:px-14">
             <!-- BRAND LOGO (left) -->
             <a href="#" class="flex-shrink-0 select-none">
               <span
@@ -163,11 +162,9 @@
                     class="block text-[38px] sm:text-[46px] md:text-[54px] lg:text-[66px] xl:text-[78px] 2xl:text-[86px]">DREAM
                     TODAY</span>
                 </h1>
-   <div class="flex items-center gap-3.5 sm:gap-4 md:gap-5">
-  <!-- الزرار الأول (خلفية بيضاء وكلام أسود مائل) -->
-  <button
-  style="padding: 13px 36px;"
-  class="
+                <div class="flex items-center gap-3.5 sm:gap-4 md:gap-5">
+                  <!-- الزرار الأول (خلفية بيضاء وكلام أسود مائل) -->
+                  <button style="padding: 13px 36px;" class="
       relative inline-flex items-center justify-center
       px-5 sm:px-9 md:px-11 lg:px-14
       py-2 sm:py-4 md:py-5
@@ -177,8 +174,8 @@
       transition-colors duration-200
       group
     ">
-    <!-- الخلفية البيضاء المائلة بزوايا دائرية -->
-    <span class="
+                    <!-- الخلفية البيضاء المائلة بزوايا دائرية -->
+                    <span class="
         absolute inset-0 bg-white
         border-2 border-white
         rounded-[10px] sm:rounded-[12px]
@@ -187,13 +184,13 @@
         transition-colors duration-200
         pointer-events-none
       "></span>
-    <!-- النص بلون أسود -->
-    <span class="relative z-10 text-black">
-      Get Started
-    </span>
-  </button>
-  <!-- الزرار الثاني (الأيقونة) -->
- <button class="
+                    <!-- النص بلون أسود -->
+                    <span class="relative z-10 text-black">
+                      Get Started
+                    </span>
+                  </button>
+                  <!-- الزرار الثاني (الأيقونة) -->
+                  <button class="
         relative inline-flex items-center justify-center
         w-12 h-11
          text-white
@@ -201,8 +198,8 @@
         transition-colors duration-200
         group
       " aria-label="Navigate">
-                  <!-- الخلفية البيضاء المائلة بزوايا دائرية -->
-                  <span class="
+                    <!-- الخلفية البيضاء المائلة بزوايا دائرية -->
+                    <span class="
           absolute inset-0 bg-[red]
           rounded-[8px]
           -skew-x-[15deg]
@@ -210,16 +207,16 @@
           transition-colors duration-200
           pointer-events-none
         "></span>
-                  <!-- الأيقونة -->
-                  <svg
-                    class="relative z-10 w-[18px] h-[18px] lg:w-5 lg:h-5 transition-transform duration-200 group-hover:translate-x-[1px]"
-                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round"
-                    stroke-linejoin="round">
-                    <path d="M13 5l7 7-7 7" />
-                    <path d="M5 5l7 7-7 7" />
-                  </svg>
-                </button>
-</div>
+                    <!-- الأيقونة -->
+                    <svg
+                      class="relative z-10 w-[18px] h-[18px] lg:w-5 lg:h-5 transition-transform duration-200 group-hover:translate-x-[1px]"
+                      viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round"
+                      stroke-linejoin="round">
+                      <path d="M13 5l7 7-7 7" />
+                      <path d="M5 5l7 7-7 7" />
+                    </svg>
+                  </button>
+                </div>
               </div>
               <!-- MOBILE: METRICS BELOW HEADLINE -->
               <div class="flex md:hidden flex-row justify-between items-start gap-6 w-full max-w-[420px]">
@@ -267,7 +264,7 @@
             </div>
           </div>
           <!-- ============ VERTICAL RIGHT-EDGE SCROLL DOWN INDICATOR ============ -->
-<div class="
+          <div class="
     absolute right-0 top-1/2 -translate-y-1/2 z-40
     hidden md:flex flex-col items-center gap-2 md:gap-3
     bg-white text-black
@@ -284,100 +281,130 @@
     after:rounded-tr-[28px] after:shadow-[10px_-10px_0_10px_#ffffff]
     after:pointer-events-none
   ">
-  <!-- النص الرأسي -->
-  <span
-    class="text-[10px] md:text-[11px] font-extrabold tracking-[0.28em] uppercase whitespace-nowrap"
-    style="writing-mode: vertical-rl; text-orientation: mixed; letter-spacing: 0.28em;">
-    SCROLL DOWN
-  </span>
-  <!-- مؤشر الحركة -->
-  <div class="w-[3px] h-10 bg-black relative overflow-hidden rounded-full">
-    <div class="absolute top-0 left-0 w-full h-1/2 bg-racing rounded-full animate-scroll-indicator"></div>
-  </div>
-  <!-- السهم -->
-  <svg class="w-[18px] h-[18px] md:w-5 md:h-5 text-racing animate-scroll-arrow" viewBox="0 0 24 24"
-    fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M12 5v14M19 12l-7 7-7-7" />
-  </svg>
-</div>
+            <!-- النص الرأسي -->
+            <span class="text-[10px] md:text-[11px] font-extrabold tracking-[0.28em] uppercase whitespace-nowrap"
+              style="writing-mode: vertical-rl; text-orientation: mixed; letter-spacing: 0.28em;">
+              SCROLL DOWN
+            </span>
+            <!-- مؤشر الحركة -->
+            <div class="w-[3px] h-10 bg-black relative overflow-hidden rounded-full">
+              <div class="absolute top-0 left-0 w-full h-1/2 bg-racing rounded-full animate-scroll-indicator"></div>
+            </div>
+            <!-- السهم -->
+            <svg class="w-[18px] h-[18px] md:w-5 md:h-5 text-racing animate-scroll-arrow" viewBox="0 0 24 24"
+              fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 5v14M19 12l-7 7-7-7" />
+            </svg>
+          </div>
           <!-- ========================================================== -->
           <!--  BOTTOM-RIGHT CUSTOMER WIDGET in the exposed white notch  -->
           <!-- ========================================================== -->
-<div class="
+          <div class="
     absolute z-50
     bottom-[-12px] right-[0px]
   " style="max-width: min(520px, 90vw);">
-  <!-- الكارت الأبيض الرئيسي المائل من الشمال -->
-  <div class="
+            <!-- الكارت الأبيض الرئيسي المائل من الشمال -->
+            <div class="
       relative bg-white
       rounded-r-[28px] sm:rounded-r-[36px]
       p-3 sm:p-4 md:p-5 lg:p-6
       flex items-center gap-4 sm:gap-6 md:gap-8
-      /* زاوية الميل الحاد للضلع الشمال */
-      [clip-path:polygon(45px_0,_100%_0,_100%_100%,_0_100%)]
-      /* الانحناء العكسي فوق على الشمال */
-      before:content-[''] before:absolute before:-top-[24px] before:left-[21px]
+      /* زاوية الميل الحاد للضلع الشمال (تمت زيادة الميل إلى 90px) */
+      [clip-path:polygon(90px_0,_100%_0,_100%_100%,_0_100%)]
+      /* الانحناء العكسي فوق على الشمال: تم تعديل left إلى (90px - 24px = 66px) */
+      before:content-[''] before:absolute before:-top-[24px] before:left-[66px]
       before:w-[24px] before:h-[24px] before:bg-transparent
       before:rounded-bl-[24px] before:shadow-[-8px_8px_0_8px_#ffffff]
       before:pointer-events-none
-      /* الانحناء العكسي تحت على الشمال */
+      /* الانحناء العكسي تحت على الشمال (يبقى ثابتاً عند 0) */
       after:content-[''] after:absolute after:-bottom-[24px] after:left-0
       after:w-[24px] after:h-[24px] after:bg-transparent
       after:rounded-tl-[24px] after:shadow-[-8px_-8px_0_8px_#ffffff]
       after:pointer-events-none
     ">
-    <!-- 1. صورة السيارة داخل كارت مائل زواياه دائرية -->
-    <div class="
-        relative flex-shrink-0
-        w-[160px] sm:w-[200px] md:w-[240px] lg:w-[270px]
-        h-[95px] sm:h-[115px] md:h-[135px] lg:h-[150px]
-         mr-1.5
-        overflow-hidden rounded-[16px] sm:rounded-[20px]
-        -skew-x-[18deg]
-        bg-gray-100
-        ml-3 sm:ml-4
-      ">
-      <!-- الصورة جوه مفرغة العكس عشان تفضل الصورة عدلة -->
-      <img :src="smallCarImg" alt="Elcarro concept" class="
-          w-[130%] h-[130%] object-cover
-          absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
-          skew-x-[18deg]
-        " />
-    </div>
-    <!-- 2. المحتوى الأيمن (الأيقونة + الإحصائيات + Avatars) -->
-    <div class="flex-1 flex flex-col justify-between py-1 min-w-0">
-      <!-- الأيقونة (كورتين متداخلتين) -->
-      <div class="mb-2 sm:mb-3">
-        <svg class="w-8 h-8 sm:w-10 sm:h-10 text-racing" viewBox="0 0 64 40" fill="none" stroke="currentColor" stroke-width="2">
-          <!-- الكورة الأولى -->
-          <circle cx="20" cy="20" r="16" />
-          <ellipse cx="20" cy="20" rx="7" ry="16" />
-          <line x1="4" y1="20" x2="36" y2="20" />
-          <!-- الكورة الثانية المتداخلة -->
-          <circle cx="40" cy="20" r="16" />
-          <ellipse cx="40" cy="20" rx="7" ry="16" />
-          <line x1="24" y1="20" x2="56" y2="20" />
-        </svg>
-      </div>
-      <!-- العنوان -->
-      <div class="text-[10px] sm:text-[11px] md:text-xs font-bold text-gray-800 uppercase tracking-wider mb-1 whitespace-nowrap">
-        HAPPY CUSTOMER
-      </div>
-      <!-- الرقم والأفاتارز في نفس السطر -->
-      <div class="flex items-center gap-2 sm:gap-3">
-        <span class="text-2xl sm:text-3xl md:text-4xl font-extrabold text-black leading-none font-sans tracking-tight">
-          95K+
-        </span>
-        <!-- الصور الدائرية للأشخاص -->
-        <div class="flex -space-x-1.5 sm:-space-x-2 mr-3">
-          <img :src="pers1" class="w-6 h-6 sm:w-8 sm:h-8 rounded-full object-cover ring-2 ring-white" alt="Avatar 1" />
-          <img :src="pers2" class="w-6 h-6 sm:w-8 sm:h-8 rounded-full object-cover ring-2 ring-white" alt="Avatar 2" />
-          <img :src="pers3" class="w-6 h-6 sm:w-8 sm:h-8 rounded-full object-cover ring-2 ring-white" alt="Avatar 3" />
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+              <!-- صورة السيارة داخل كارت مائل زواياه دائرية عبر SVG clipPath -->
+              <div class="relative flex-shrink-0 ml-4 sm:ml-6">
+                <svg
+                  viewBox="0 0 550 320"
+                  class="w-[145px] sm:w-[185px] md:w-[225px] lg:w-[255px] h-auto block select-none drop-shadow-sm"
+                  aria-label="Car showcase"
+                >
+                  <defs>
+                    <!-- مسار يحدد الشكل المائل بزوايا دائرية فائقة النعومة والهندسة الدقيقة -->
+                    <clipPath id="roundedSkewClip">
+                      <path d="
+                        M 130 10 
+                        L 520 10 
+                        A 25 25 0 0 1 544 32
+                        L 420 290 
+                        A 25 25 0 0 1 398 310 
+                        L 30 310 
+                        A 25 25 0 0 1 6 288 
+                        L 108 30 
+                        A 25 25 0 0 1 130 10 
+                        Z" />
+                    </clipPath>
+                  </defs>
+
+                  <!-- خلفية رمادية هادئة للكارت -->
+                  <rect
+                    width="550"
+                    height="320"
+                    fill="#f3f4f6"
+                    clip-path="url(#roundedSkewClip)"
+                  />
+
+                  <!-- تطبيق الماسك على الصورة مباشرة -->
+                  <image 
+                    :href="smallCarImg" 
+                    :xlink:href="smallCarImg"
+                    width="550" 
+                    height="320" 
+                    preserveAspectRatio="xMidYMid slice" 
+                    clip-path="url(#roundedSkewClip)" 
+                  />
+                </svg>
+              </div>
+              <!-- 2. المحتوى الأيمن (الأيقونة + الإحصائيات + Avatars) -->
+              <div class="flex-1 flex flex-col justify-between py-1 min-w-0">
+                <!-- الأيقونة (كورتين متداخلتين) -->
+                <div class="mb-2 sm:mb-3">
+                  <svg class="w-8 h-8 sm:w-10 sm:h-10 text-racing" viewBox="0 0 64 40" fill="none" stroke="currentColor"
+                    stroke-width="2">
+                    <!-- الكورة الأولى -->
+                    <circle cx="20" cy="20" r="16" />
+                    <ellipse cx="20" cy="20" rx="7" ry="16" />
+                    <line x1="4" y1="20" x2="36" y2="20" />
+                    <!-- الكورة الثانية المتداخلة -->
+                    <circle cx="40" cy="20" r="16" />
+                    <ellipse cx="40" cy="20" rx="7" ry="16" />
+                    <line x1="24" y1="20" x2="56" y2="20" />
+                  </svg>
+                </div>
+                <!-- العنوان -->
+                <div
+                  class="text-[10px] sm:text-[11px] md:text-xs font-bold text-gray-800 uppercase tracking-wider mb-1 whitespace-nowrap">
+                  HAPPY CUSTOMER
+                </div>
+                <!-- الرقم والأفاتارز في نفس السطر -->
+                <div class="flex items-center gap-2 sm:gap-3">
+                  <span
+                    class="text-2xl sm:text-3xl md:text-4xl font-extrabold text-black leading-none font-sans tracking-tight">
+                    95K+
+                  </span>
+                  <!-- الصور الدائرية للأشخاص -->
+                  <div class="flex -space-x-1.5 sm:-space-x-2 mr-3">
+                    <img :src="pers1" class="w-6 h-6 sm:w-8 sm:h-8 rounded-full object-cover ring-2 ring-white"
+                      alt="Avatar 1" />
+                    <img :src="pers2" class="w-6 h-6 sm:w-8 sm:h-8 rounded-full object-cover ring-2 ring-white"
+                      alt="Avatar 2" />
+                    <img :src="pers3" class="w-6 h-6 sm:w-8 sm:h-8 rounded-full object-cover ring-2 ring-white"
+                      alt="Avatar 3" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div><!-- /absolute content layer -->
       </div><!-- /END hero stage -->
       <div class="h-14 md:h-20 lg:h-24"></div>
@@ -393,33 +420,41 @@ import pers3 from '../assets/imgs/pers3.webp'
 </script>
 <style scoped>
 @keyframes scroll-indicator {
+
   0%,
   100% {
     transform: translateY(-10%);
     opacity: 0.85;
   }
+
   50% {
     transform: translateY(110%);
     opacity: 1;
   }
 }
+
 .animate-scroll-indicator {
   animation: scroll-indicator 2.1s cubic-bezier(0.65, 0, 0.35, 1) infinite;
 }
+
 @keyframes scroll-arrow {
+
   0%,
   100% {
     transform: translateY(0);
     opacity: 1;
   }
+
   50% {
     transform: translateY(6px);
     opacity: 0.75;
   }
 }
+
 .animate-scroll-arrow {
   animation: scroll-arrow 2.1s ease-in-out infinite;
 }
+
 .concave-tab {
   background-color: #ffffff;
   /* عمل قطعتين دائريتين مفرغتين في الزاوية الأعلى للشمال والأسفل للشمال */
@@ -429,4 +464,6 @@ import pers3 from '../assets/imgs/pers3.webp'
   mask-composite: intersect;
   -webkit-mask-composite: destination-in;
 }
+
+
 </style>
